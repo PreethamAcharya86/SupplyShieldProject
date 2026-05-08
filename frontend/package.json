@@ -10,9 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/d3": "^7.4.3",
+    "@types/d3-geo": "^3.1.0",
     "@types/three": "^0.184.1",
+    "@types/topojson-client": "^3.1.5",
     "axios": "^1.16.0",
     "clsx": "^2.1.1",
+    "d3": "^7.9.0",
+    "d3-geo": "^3.1.1",
     "framer-motion": "^12.38.0",
     "lucide-react": "^1.14.0",
     "react": "^19.2.5",
@@ -22,6 +27,7 @@
     "recharts": "^3.8.1",
     "tailwind-merge": "^3.5.0",
     "three": "^0.184.0",
+    "topojson-client": "^3.1.0",
     "zustand": "^5.0.13"
   },
   "devDependencies": {

@@ -24,15 +24,13 @@ const Navbar = () => {
   }, [])
 
   return (
-    <nav 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'py-3' : 'py-5'
-      }`}
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'py-3' : 'py-5'
+        }`}
     >
       <div className="container">
-        <div className={`glass-card px-5 py-2.5 flex items-center justify-between ${
-          scrolled ? 'bg-background/80' : 'bg-white/5'
-        }`}>
+        <div className={`glass-card px-5 py-2.5 flex items-center justify-between ${scrolled ? 'bg-background/80' : 'bg-white/5'
+          }`}>
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shadow-[0_0_20px_var(--color-primary-glow)] transition-transform group-hover:scale-110">
@@ -67,7 +65,7 @@ const Navbar = () => {
               <Bell className="w-5 h-5" />
               <span className="absolute top-2 right-2 w-2 h-2 bg-danger rounded-full"></span>
             </button>
-            
+
           </div>
         </div>
       </div>

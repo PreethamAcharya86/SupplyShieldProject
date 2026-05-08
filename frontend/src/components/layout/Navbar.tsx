@@ -68,12 +68,6 @@ const Navbar = () => {
               <span className="absolute top-2 right-2 w-2 h-2 bg-danger rounded-full"></span>
             </button>
             
-            <button 
-              className="lg:hidden btn-icon"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-            </button>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import GlassCard from '../components/ui/GlassCard'
 import CommodityCard from '../components/dashboard/CommodityCard'
 import TrendChart from '../components/charts/TrendChart'
 import { commodityPrices, features } from '../data/mockData'
-import { cn } from '../lib/utils'
+
 
 const iconMap = {
   AlertTriangle: AlertTriangle,
@@ -118,11 +118,13 @@ const Home = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {commodityPrices.map((item, index) => (
+            {commodityPrices.map((item) => (
               <motion.div key={item.id} variants={itemVariants}>
                 <CommodityCard 
                   {...item} 
                   icon={item.icon as any}
+                  trend={item.trend as "up" | "down" | "neutral"}
+                  status={item.status as "success" | "warning" | "danger"}
                   delay={0} // Managed by stagger
                 />
               </motion.div>

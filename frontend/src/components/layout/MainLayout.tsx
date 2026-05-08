@@ -6,7 +6,7 @@ const MainLayout = () => {
     <div className="min-h-screen bg-background text-white">
       <Navbar />
       
-      <main className="container pt-24 pb-12">
+      <main className="pt-24 pb-12 min-h-[calc(100vh-200px)]">
         <Outlet />
       </main>
 

@@ -1,7 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
 import MainLayout from './components/layout/MainLayout'
 import Home from './pages/Home'
-import { Market, Alerts, Locality, Awareness, About } from './pages/Placeholders'
+import Locality from './pages/Locality'
+import { Market, Alerts, Awareness, About } from './pages/Placeholders'
 
 function App() {
   return (
